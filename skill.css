@@ -42,7 +42,7 @@
     padding: 20px;
 }
 .project{
-    height: 35px;
+    height: auto;
     width: min(700px, 90%);
     background-color: #ffc86b;
     display: flex;
@@ -52,12 +52,42 @@
     border-radius: 10px;
     font-weight: 600;
 }
-details[open] ~ summary{
-    resize: both;
-    overflow: hidden;
-    height: 40vh;
-    width: inherit;
-    background: #393946;
+details{
+    transition: all 0.5s;
+}
+summary{
+    padding: 8px;
+    cursor: pointer;
+}
+details[open]{
+    text-align: center;
+    padding-bottom: 8px;
+    transition: all 0.5s;
+}
+details a{
+    text-decoration: none;
+}
+details a:hover{
+    text-decoration: underline;
+}
+.seeMore{
+    width: auto;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #ffc86b;
+    padding: 5px 7px;
+    font-size: medium;
+    border-radius: 30px;
+    border: solid 2px transparent;
+    background-color: transparent;
+    transition: all 0.5s;
+}
+.seeMore:hover{
+    border: solid 2px #ffc86b;
+    color: rgb(186, 186, 186);
+    transition: all 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 #certificate{
     display: flex;
