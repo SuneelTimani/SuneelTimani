@@ -104,7 +104,7 @@ details a:hover{
     height: 250px;
     width: 350px;
     object-fit: cover;
-    margin: 50px;
+    margin: 50px 0;
     border: solid 2px gray;
     border-radius: 5px;
     box-shadow: 0 5px 10px 5px #1717173a;
@@ -137,6 +137,9 @@ details a:hover{
     }
     .certificate{
         flex-direction: column;
+    }
+     .certificate img{
+        margin: 50px 0;
     }
  }
  @media all and (max-width: 500px) {
